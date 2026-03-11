@@ -61,7 +61,7 @@ public class BankingApp {
                                 System.out.println("1.credit money");
                                 System.out.println("2.debit money");
                                 System.out.println("3.transfer money");
-                                System.out.println("4.check money");
+                                System.out.println("4.check balance");
                                 System.out.println("5.log out");
                                 System.out.println("Enter your choice:");
                                 ch2 = scanner.nextInt();
@@ -84,7 +84,6 @@ public class BankingApp {
                                     default -> {
                                         System.out.println("Enter a valid choice");
                                     }
-
                                 }
                             }
 
@@ -93,10 +92,12 @@ public class BankingApp {
                         }
                     }
                     case 3 -> {
+                        System.out.println("Thank you for using this Banking Management System");
+                        System.out.println("Exiting...");
                         return;
                     }
                     default -> {
-
+                        System.out.println("Enter a valid choice");
                     }
                 }
             }
