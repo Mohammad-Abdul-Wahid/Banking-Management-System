@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class BankingApp {
     private static final String url = "jdbc:mysql://localhost:3306/banking_system";
-    private static final String username = "root";
-    private static final String password = "Wahid@123";
+    private static final String username = "root";//Enter SQL username
+    private static final String password = "*******";//Enter SQL password
 
     static void main() throws ClassNotFoundException, SQLException {
         try {
@@ -55,6 +55,7 @@ public class BankingApp {
                                     break;
                                 }
                             }
+                            System.out.println();
                             accountNumber = accounts.get_account_number(email);
                             int ch2 = 0;
                             while (ch2 != 5) {
@@ -68,21 +69,26 @@ public class BankingApp {
                                 switch (ch2) {
                                     case 1 -> {
                                         accountManager.credit_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 2 -> {
                                         accountManager.debit_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 3 -> {
                                         accountManager.transfer_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 4 -> {
                                         accountManager.check_balance(accountNumber);
+                                        System.out.println();
                                     }
                                     case 5 -> {
-
+                                        System.out.println();
                                     }
                                     default -> {
                                         System.out.println("Enter a valid choice");
+                                        System.out.println();
                                     }
                                 }
                             }
