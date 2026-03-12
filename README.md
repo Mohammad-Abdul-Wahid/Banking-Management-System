@@ -119,4 +119,3 @@ CREATE TABLE accounts (
 
 ---
 
-Would you like me to also add a **sample run (console output)** section in the README, showing how the menu looks and how a user interacts step by step? That would make it even clearer for someone trying your project.
