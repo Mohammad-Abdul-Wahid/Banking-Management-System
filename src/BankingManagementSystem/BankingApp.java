@@ -55,36 +55,41 @@ public class BankingApp {
                                     break;
                                 }
                             }
+                            System.out.println();
                             accountNumber = accounts.get_account_number(email);
                             int ch2 = 0;
                             while (ch2 != 5) {
                                 System.out.println("1.credit money");
                                 System.out.println("2.debit money");
                                 System.out.println("3.transfer money");
-                                System.out.println("4.check money");
+                                System.out.println("4.check balance");
                                 System.out.println("5.log out");
                                 System.out.println("Enter your choice:");
                                 ch2 = scanner.nextInt();
                                 switch (ch2) {
                                     case 1 -> {
                                         accountManager.credit_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 2 -> {
                                         accountManager.debit_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 3 -> {
                                         accountManager.transfer_money(accountNumber);
+                                        System.out.println();
                                     }
                                     case 4 -> {
                                         accountManager.check_balance(accountNumber);
+                                        System.out.println();
                                     }
                                     case 5 -> {
-
+                                        System.out.println();
                                     }
                                     default -> {
                                         System.out.println("Enter a valid choice");
+                                        System.out.println();
                                     }
-
                                 }
                             }
 
@@ -93,10 +98,12 @@ public class BankingApp {
                         }
                     }
                     case 3 -> {
+                        System.out.println("Thank you for using this Banking Management System");
+                        System.out.println("Exiting...");
                         return;
                     }
                     default -> {
-
+                        System.out.println("Enter a valid choice");
                     }
                 }
             }

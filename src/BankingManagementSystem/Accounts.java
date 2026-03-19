@@ -18,6 +18,7 @@ public class Accounts {
         String full_name = scanner.nextLine();
         System.out.println("Enter your initial balance:");
         double balance = scanner.nextDouble();
+        scanner.nextLine();
         System.out.println("Enter your 4 digit pin:");
         String security_pin = scanner.nextLine();
         long accountNumber = generate_account_number();
